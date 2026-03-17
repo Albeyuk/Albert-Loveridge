@@ -9,8 +9,6 @@
 ![Level 3 Cyber Security](https://img.shields.io/badge/Course-Level%203%20Cyber%20Security-brightgreen?style=for-the-badge) 
 ![Kali Linux](https://img.shields.io/badge/Kali-Linux-black?style=for-the-badge)
 
----
-
 I am an aspiring Cyber Security Analyst currently completing **Level 3 Cyber Security**. I am building hands-on skills in Kali Linux, Python scripting, network scanning, and virtual lab setups. I am actively learning and creating projects to understand real-world security scenarios and am looking for my first entry-level IT or cyber security role.
 
 ---
