@@ -57,20 +57,23 @@ PORT     STATE SERVICE VERSION
 21/tcp   open  ftp     vsftpd 2.3.4
 22/tcp   open  ssh     OpenSSH 4.7p1
 80/tcp   open  http    Apache httpd 2.2.8
+139/tcp  open  netbios-ssn Samba smbd 3.X
 ```
 
-This revealed multiple outdated services that are known to contain vulnerabilities.
+This scan identified multiple outdated services that are known to contain vulnerabilities.
 
 ---
 
 ### 2. Vulnerability Identification
 
-The scan results were analysed to identify potential vulnerabilities. For example:
+The scan results were analysed to identify potential vulnerabilities.
 
+Key findings:
 - vsftpd 2.3.4 → known backdoor vulnerability  
-- Outdated Apache version → potential exploit paths  
+- Outdated Apache version → potential remote exploits  
+- Samba service → potential misconfiguration risks  
 
-These findings demonstrate how attackers identify weak points in a system.
+These findings demonstrate how attackers identify weak points in a system before attempting exploitation.
 
 ---
 
@@ -87,9 +90,13 @@ set RHOST 192.168.56.102
 run
 ```
 
-Result:
-- Successful access to the target machine  
-- Demonstrated how unpatched services can lead to system compromise  
+---
+
+## ✅ Exploitation Result
+
+After running the exploit, a shell session was successfully opened on the target machine.
+
+This confirmed that the vulnerability was exploitable and demonstrated how an attacker could gain unauthorised access to a system.
 
 ---
 
@@ -98,11 +105,11 @@ Result:
 Wireshark was used to capture and analyse network traffic during the attack.
 
 Key observations:
-- TCP handshake process  
-- Suspicious traffic patterns during exploitation  
-- Communication between attacker and target system  
+- TCP handshake process between attacker and target  
+- Suspicious traffic during exploitation attempts  
+- Visible communication patterns that could indicate malicious behaviour  
 
-This demonstrates how defenders can detect malicious activity through packet analysis.
+This demonstrates how defenders can monitor and detect potential attacks through packet inspection.
 
 ---
 
@@ -114,7 +121,20 @@ Basic defensive measures were applied to reduce vulnerabilities:
 - Restricted open ports  
 - Applied firewall rules  
 
-The system was re-scanned to confirm a reduced attack surface.
+The system was re-scanned to confirm a reduced attack surface and improved security posture.
+
+---
+
+## 🏢 Real-World Scenario
+
+In a workplace environment, a vulnerable service such as vsftpd 2.3.4 could allow an attacker to gain unauthorised access to a server.
+
+For example, if this system was part of a company network, an attacker could:
+- Gain initial access via the FTP vulnerability  
+- Move laterally across internal systems  
+- Access sensitive or confidential data  
+
+This highlights the importance of patch management, secure configuration, and continuous monitoring within an organisation.
 
 ---
 
@@ -123,7 +143,7 @@ The system was re-scanned to confirm a reduced attack surface.
 - Practical experience with network scanning and enumeration  
 - Understanding of real-world vulnerabilities and exploitation techniques  
 - Ability to use industry tools such as Nmap, Wireshark, and Metasploit  
-- Awareness of how attackers operate and how to defend against them  
+- Awareness of attacker methodologies and defensive strategies  
 - Improved understanding of system hardening and risk reduction  
 
 ---
