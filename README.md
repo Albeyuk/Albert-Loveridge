@@ -4,6 +4,14 @@ I am an aspiring Cyber Security Analyst currently completing **Level 3 Cyber Sec
 
 ---
 
+## Table of Contents
+- [Skills & Tools](#skills--tools)
+- [Projects](#projects)
+- [Learning & In Progress](#learning--in-progress)
+- [Contact](#contact)
+
+---
+
 ## Skills & Tools
 
 - **Programming:** Python, Bash scripting  
