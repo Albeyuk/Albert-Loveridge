@@ -1,7 +1,8 @@
 # Albert Loveridge – Aspiring Cyber Security Analyst
 
-![Albert's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Albeyuk&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Albeyuk&layout=compact&theme=radical)
+![Albert's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Albeyuk&show_icons=true&hide_border=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Albeyuk&layout=compact&hide_border=true&theme=radical)
+
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
 ![Level 3 Cyber Security](https://img.shields.io/badge/Course-Level%203%20Cyber%20Security-brightgreen?style=flat-square)
 ![Kali Linux](https://img.shields.io/badge/Kali-Linux-black?style=flat-square)
