@@ -92,11 +92,18 @@ run
 
 ---
 
-## ✅ Exploitation Result
+## 🧪 Proof of Access
 
-After running the exploit, a shell session was successfully opened on the target machine.
+After running the exploit, a command shell was successfully opened on the target machine.
 
-This confirmed that the vulnerability was exploitable and demonstrated how an attacker could gain unauthorised access to a system.
+Example interaction:
+
+```
+whoami
+root
+```
+
+This confirms full control of the vulnerable machine and demonstrates the impact of the vulnerability.
 
 ---
 
@@ -134,7 +141,7 @@ For example, if this system was part of a company network, an attacker could:
 - Move laterally across internal systems  
 - Access sensitive or confidential data  
 
-This highlights the importance of patch management, secure configuration, and continuous monitoring within an organisation.
+This demonstrates how a single unpatched service can lead to full system compromise and highlights the importance of patch management, secure configuration, and continuous monitoring.
 
 ---
 
