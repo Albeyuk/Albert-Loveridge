@@ -23,15 +23,14 @@ This home lab provides a controlled environment for practising penetration testi
 ## 📋 Activities Performed
 - Network scanning and enumeration  
 - Vulnerability identification  
-- Exploitation of services  
+- Exploitation of services (planned / simulated)  
 - Traffic capture and analysis  
 - System hardening practices  
 
 ## 🔐 Proof of Access
 
-The following output demonstrates successful access within the Kali Linux attacker machine environment:
-
-### 💻 Local User Verification (Kali)
+### 💻 Attacker Machine Session
+The following output demonstrates the active user on the Kali Linux attacker machine used in this lab:
 
 ```bash
 albey@kali:~$ whoami
