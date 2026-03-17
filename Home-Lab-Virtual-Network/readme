@@ -1,0 +1,48 @@
+# Home Lab Virtual Network
+
+## 🏗️ Project Overview
+This project documents the setup and exploration of a **home virtual lab environment** for learning cybersecurity techniques. The goal is to practice network scanning, service enumeration, and basic vulnerability assessment in a safe, isolated environment. The lab provides hands-on experience with Linux, Windows, and intentionally vulnerable systems.
+
+---
+
+## 🖥️ Lab Environment
+The virtual lab consists of:
+
+| Machine | Role | IP (Example) | Description |
+|---------|------|--------------|-------------|
+| **Kali Linux** | Attacker | 192.168.56.101 | Offensive testing machine; used to run scans, enumeration, and experiments. |
+| **Metasploitable 2** | Target | 192.168.56.102 | Intentionally vulnerable Linux VM; used to practice scanning and security analysis. |
+| **Windows VM** | Target | 192.168.56.103 | Optional target for exploring Windows security, services, and vulnerabilities. |
+
+**Network Configuration:**
+- VirtualBox Host-Only or Internal Network (all VMs connected for isolated testing)  
+- All traffic contained locally; no external internet exposure for safety
+
+---
+
+## 🛠️ Tools Used
+- **Nmap** – Network scanning, port discovery, service enumeration  
+- **Metasploit Framework** – Exploitation framework for controlled practice  
+- **Wireshark** – Packet capture and analysis  
+- **Netcat** – Basic connectivity testing and enumeration  
+- **Bash/Linux commands** – `ping`, `whoami`, `hostname`, etc.
+
+---
+
+## 🔍 Lab Activities / Experiments
+1. Verified connectivity and session on Kali VM  
+2. Enumerated the target VM using Nmap for open ports and services  
+3. Practiced safe scanning techniques and analysis of output  
+4. Documented observations and network configurations  
+5. Developed understanding of virtual network isolation and lab management
+
+---
+
+## 🔐 Proof of Lab Access
+
+### 🖥️ Attacker Machine Verification
+```bash
+albey@kali:~$ whoami
+albey
+albey@kali:~$ hostname
+kali-lab
