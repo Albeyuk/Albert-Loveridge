@@ -1,5 +1,16 @@
 # Albert Loveridge – Aspiring Cyber Security Analyst
 
+![Albert's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Albeyuk&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Albeyuk&layout=compact&theme=radical)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
+![Level 3 Cyber Security](https://img.shields.io/badge/Course-Level%203%20Cyber%20Security-brightgreen?style=flat-square)
+![Kali Linux](https://img.shields.io/badge/Kali-Linux-black?style=flat-square)
+
+## Table of Contents
+- [Skills & Tools](#skills--tools)
+- [Projects](#projects)
+- [Learning & In Progress](#learning--in-progress)
+- [Contact](#contact)
 I am an aspiring Cyber Security Analyst currently completing **Level 3 Cyber Security**. I am building hands-on skills in Kali Linux, Python scripting, network scanning, and virtual lab setups. I am actively learning and creating projects to understand real-world security scenarios and am looking for my first entry-level IT or cyber security role.
 
 ---
