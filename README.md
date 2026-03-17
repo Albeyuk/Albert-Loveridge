@@ -1,6 +1,6 @@
 # Albert Loveridge – Aspiring Cyber Security Analyst
 
-I am an aspiring Cyber Security Analyst with hands-on experience in Kali Linux, Python scripting, and network security. Currently completing Level 3 Cyber Security, I have built practical labs to analyse vulnerabilities, perform network scanning, and understand real-world attack scenarios. Open to junior IT and cyber security roles in the UK, USA, or Canada.
+I am an aspiring Cyber Security Analyst currently completing **Level 3 Cyber Security**. I am building hands-on skills in Kali Linux, Python scripting, network scanning, and virtual lab setups. I am actively learning and creating projects to understand real-world security scenarios and am looking for my first entry-level IT or cyber security role.
 
 ---
 
@@ -19,14 +19,14 @@ I am an aspiring Cyber Security Analyst with hands-on experience in Kali Linux, 
 **Python Port Scanner**  
 - Developed a Python script to scan TCP ports and detect open services  
 - Practiced socket programming and exception handling  
-- Useful for small network vulnerability assessments
+- Learned how port scanning can help identify network vulnerabilities
 
 **Nmap Network Scan Lab**  
-- Set up a virtual lab environment to test and analyse networks  
-- Learned port scanning, service detection, and vulnerability analysis  
+- Built a virtual lab environment to test and analyse networks  
+- Practiced port scanning, service detection, and basic vulnerability analysis  
 
 **Cyber Security Home Lab**  
-- Configured VirtualBox lab with multiple OS instances  
+- Configured multiple virtual machines to simulate a small network  
 - Practiced penetration testing scenarios, logging, and alert monitoring
 
 ---
@@ -36,12 +36,13 @@ I am an aspiring Cyber Security Analyst with hands-on experience in Kali Linux, 
 - Level 3 Cyber Security (in progress)  
 - Advanced Python for security automation  
 - Active Directory and network enumeration labs  
+- Preparing for entry-level IT / cyber security roles
 
 ---
 
 ## Contact
 
-I’m currently looking for entry-level IT and cyber security roles. You can reach me via:  
+I am currently looking for **entry-level IT and cyber security roles**. You can reach me via:
 
 - [LinkedIn](https://www.linkedin.com/in/albeyuk)  
 - Email: aloveridge86@aol.com
