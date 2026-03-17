@@ -1,11 +1,15 @@
 # Albert Loveridge – Aspiring Cyber Security Analyst
 
-![Albert's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Albeyuk&show_icons=true&hide_border=true&theme=radical)
+<!-- GitHub Stats -->
+![Albert's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Albeyuk&show_icons=true&hide_border=true&theme=radical&count_private=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Albeyuk&layout=compact&hide_border=true&theme=radical)
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
-![Level 3 Cyber Security](https://img.shields.io/badge/Course-Level%203%20Cyber%20Security-brightgreen?style=flat-square)
-![Kali Linux](https://img.shields.io/badge/Kali-Linux-black?style=flat-square)
+<!-- Skills / Course Badges (Uniform horizontal line) -->
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge) 
+![Level 3 Cyber Security](https://img.shields.io/badge/Course-Level%203%20Cyber%20Security-brightgreen?style=for-the-badge) 
+![Kali Linux](https://img.shields.io/badge/Kali-Linux-black?style=for-the-badge)
+
+---
 
 I am an aspiring Cyber Security Analyst currently completing **Level 3 Cyber Security**. I am building hands-on skills in Kali Linux, Python scripting, network scanning, and virtual lab setups. I am actively learning and creating projects to understand real-world security scenarios and am looking for my first entry-level IT or cyber security role.
 
